@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "github.vscode-github-actions",
+    "EditorConfig.EditorConfig",
+    "ecmel.vscode-html-css",
+    "dsznajder.es7-react-js-snippets",
+    "stylelint.vscode-stylelint"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-tailwindcss"
+  ],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "color-hex-length": "short",
+    "block-no-empty": true,
+    "no-duplicate-selectors": true,
+    "unit-allowed-list": ["em", "rem", "%", "s", "px", "vh", "vw", "fr"],
+    "selector-max-id": 0,
+    "selector-class-pattern": null,
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment", "inside-block"]
+      }
+    ],
+    "scss/at-extend-no-missing-placeholder": true,
+    "scss/dollar-variable-pattern": "^[a-z0-9\\-_]+$",
+    "scss/no-duplicate-dollar-variables": true,
+    "scss/no-empty-source": null,
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignoreTypes": ["/^tw-/"]
+      }
+    ]
+  }
+}

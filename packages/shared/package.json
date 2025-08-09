@@ -1,0 +1,29 @@
+{
+  "name": "@miralys-tournament/shared",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shared package for Miralys Tournament Monorepo",
+  "keywords": [
+    "shared",
+    "package",
+    "monorepo",
+    "turbo",
+    "turbomonorepo",
+    "miralys"
+  ],
+  "homepage": "https://github.com/Miralys-Project/Miralys-Tournament#readme",
+  "bugs": {
+    "url": "https://github.com/Miralys-Project/Miralys-Tournament/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miralys-Project/Miralys-Tournament.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Miralys-Project",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "enabledManagers": ["pnpm", "cargo", "github-actions"],
+  "dependencyDashboard": true,
+  "dependencyDashboardApproval": true,
+  "packageRules": [
+    {
+      "managers": ["pnpm"],
+      "fileMatch": [
+        "^apps/desktop/package.json$",
+        "^apps/mobile/package.json$",
+        "^apps/server/package.json$",
+        "^apps/web/package.json$",
+        "^package.json$",
+        "^pnpm-workspace.yaml$"
+      ],
+      "schedule": ["before 4am every weekday"],
+      "automerge": false,
+      "stabilityDays": 1,
+      "semanticCommits": "enabled",
+      "commitMessagePrefix": "pnpm",
+      "groupName": "all PNPM dependencies"
+    },
+    {
+      "managers": ["cargo"],
+      "fileMatch": [
+        "^apps/desktop/src-tauri/Cargo.toml$"
+      ],
+      "schedule": ["before 5am every weekday"],
+      "automerge": false,
+      "stabilityDays": 3,
+      "semanticCommits": "enabled",
+      "commitMessagePrefix": "cargo",
+      "groupName": "all Cargo dependencies"
+    },
+    {
+      "managers": ["github-actions"],
+      "fileMatch": [
+        "^\\.github/workflows/ci.yml$",
+        "^\\.github/workflows/codeql.yml$",
+        "^\\.github/workflows/dependency-review.yml$",
+        "^\\.github/workflows/greetings.yml$",
+        "^\\.github/workflows/label.yml$"
+      ],
+      "schedule": ["before 6am every weekday"],
+      "automerge": false,
+      "stabilityDays": 1,
+      "semanticCommits": "enabled",
+      "commitMessagePrefix": "gha",
+      "groupName": "GitHub Actions workflows"
+    },
+    {
+      "packagePatterns": ["^@types/"],
+      "automerge": false,
+      "groupName": "TypeScript types"
+    },
+    {
+      "packagePatterns": ["^eslint", "^prettier", "typescript"],
+      "automerge": false,
+      "groupName": "Linting & Formatting"
+    }
+  ],
+  "postUpdateOptions": [
+    "pnpmDedupe",
+    "yarnDedupeFewer",
+    "rebaseStalePrs",
+    "scheduleDaily"
+  ],
+  "timezone": "Europe/Paris",
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 10,
+  "labels": ["renovate", "dependencies"],
+  "reviewers": ["mon-username-github"],
+  "assignees": ["mon-username-github"],
+  "semanticCommitScope": "deps"
+}

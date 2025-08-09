@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .tsx,.ts,.jsx,.js src",
-    "test": "echo \"No tests yet\""
+  "test": "vitest run"
   },
   "keywords": [],
   "author": "",
