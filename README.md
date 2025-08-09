@@ -18,7 +18,7 @@
   <a href="https://github.com/Miralys-Project/Miralys-Tournament/issues" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/github/issues/Miralys-Project/Miralys-Tournament?style=for-the-badge" alt="Issues" />
   </a>
-  <a href="https://discord.gg/your-server-invite" target="_blank" rel="noopener noreferrer">
+  <a href="https://discord.gg/pxkN36Yd2c" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/discord/1123307765599838309?label=Discord&logo=discord&style=for-the-badge" alt="Discord" />
   </a>
 </div>
