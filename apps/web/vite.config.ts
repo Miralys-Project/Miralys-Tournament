@@ -12,4 +12,7 @@ export default defineConfig({
       '@ui': '/packages/ui/src',
     },
   },
+  define: {
+    global: 'globalThis',
+  },
 });
