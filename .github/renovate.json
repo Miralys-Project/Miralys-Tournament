@@ -2,7 +2,7 @@
   "extends": [
     "config:base"
   ],
-  "enabledManagers": ["pnpm", "cargo", "github-actions"],
+  "enabledManagers": ["npm", "cargo", "github-actions"],
   "dependencyDashboard": true,
   "dependencyDashboardApproval": true,
   "packageRules": [
