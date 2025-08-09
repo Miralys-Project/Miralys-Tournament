@@ -1,65 +1,61 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:recommended"],
   "enabledManagers": ["npm", "cargo", "github-actions"],
   "dependencyDashboard": true,
   "dependencyDashboardApproval": true,
   "packageRules": [
     {
-      "managers": ["pnpm"],
-      "fileMatch": [
-        "^apps/desktop/package.json$",
-        "^apps/mobile/package.json$",
-        "^apps/server/package.json$",
-        "^apps/web/package.json$",
-        "^package.json$",
-        "^pnpm-workspace.yaml$"
+      "matchManagers": ["pnpm"],
+      "managerFilePatterns": [
+        "/^apps/desktop/package.json$/",
+        "/^apps/mobile/package.json$/",
+        "/^apps/server/package.json$/",
+        "/^apps/web/package.json$/",
+        "/^package.json$/",
+        "/^pnpm-workspace.yaml$/"
       ],
       "schedule": ["before 4am every weekday"],
       "automerge": false,
-      "stabilityDays": 1,
+      "minimumReleaseAge": "1 day",
       "semanticCommits": "enabled",
       "commitMessagePrefix": "pnpm",
       "groupName": "all PNPM dependencies"
     },
     {
-      "managers": ["cargo"],
-      "fileMatch": [
-        "^apps/desktop/src-tauri/Cargo.toml$"
-      ],
+      "matchManagers": ["cargo"],
+      "managerFilePatterns": ["/^apps/desktop/src-tauri/Cargo.toml$/"],
       "schedule": ["before 5am every weekday"],
       "automerge": false,
-      "stabilityDays": 3,
+      "minimumReleaseAge": "3 days",
       "semanticCommits": "enabled",
       "commitMessagePrefix": "cargo",
       "groupName": "all Cargo dependencies"
     },
     {
-      "managers": ["github-actions"],
-      "fileMatch": [
-        "^\\.github/workflows/ci.yml$",
-        "^\\.github/workflows/codeql.yml$",
-        "^\\.github/workflows/dependency-review.yml$",
-        "^\\.github/workflows/greetings.yml$",
-        "^\\.github/workflows/label.yml$"
+      "matchManagers": ["github-actions"],
+      "managerFilePatterns": [
+        "/^\\.github/workflows/ci.yml$/",
+        "/^\\.github/workflows/codeql.yml$/",
+        "/^\\.github/workflows/dependency-review.yml$/",
+        "/^\\.github/workflows/greetings.yml$/",
+        "/^\\.github/workflows/label.yml$/"
       ],
       "schedule": ["before 6am every weekday"],
       "automerge": false,
-      "stabilityDays": 1,
+      "minimumReleaseAge": "1 day",
       "semanticCommits": "enabled",
       "commitMessagePrefix": "gha",
       "groupName": "GitHub Actions workflows"
     },
     {
-      "packagePatterns": ["^@types/"],
       "automerge": false,
-      "groupName": "TypeScript types"
+      "groupName": "TypeScript types",
+      "matchPackageNames": ["/^@types//"]
     },
     {
-      "packagePatterns": ["^eslint", "^prettier", "typescript"],
       "automerge": false,
-      "groupName": "Linting & Formatting"
+      "groupName": "Linting & Formatting",
+      "matchPackageNames": ["/^eslint/", "/^prettier/", "/typescript/"]
     }
   ],
   "postUpdateOptions": [
