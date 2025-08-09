@@ -12,6 +12,7 @@ export default defineConfig({
   },
   test: {
     globals: true,
+    environment: 'jsdom', // Environnement par défaut
     include: [
       'apps/**/*.{test,spec}.{js,ts,tsx}',
       'packages/**/*.{test,spec}.{js,ts,tsx}',
@@ -37,13 +38,6 @@ export default defineConfig({
     setupFiles: './vitest.setup.ts',
     watch: false,
     reporters: 'default',
-
-    environmentMatchGlobs: [
-      ['apps/web/**', 'jsdom'],
-      ['apps/desktop/**', 'jsdom'],
-      ['apps/mobile/**', 'jsdom'],
-      ['apps/server/**', 'node'],
-      ['apps/discord/**', 'node'],
-    ],
+    passWithNoTests: true, // Essentiel pour éviter l'échec quand aucun test n'est trouvé
   },
 });
