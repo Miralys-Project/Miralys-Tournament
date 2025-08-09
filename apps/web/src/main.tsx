@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.scss';
 
 const App = () => {
   return <h1>Tournament Manager - Web App</h1>;

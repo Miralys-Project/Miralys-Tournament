@@ -1,3 +1,6 @@
+// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
+import storybook from 'eslint-plugin-storybook';
+
 import js from '@eslint/js';
 import tseslint from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
@@ -8,7 +11,6 @@ import globals from 'globals';
 
 export default [
   js.configs.recommended,
-
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
@@ -34,7 +36,6 @@ export default [
       },
     },
   },
-
   {
     files: ['**/*.{ts,tsx}'],
     plugins: {
@@ -44,7 +45,6 @@ export default [
       ...tseslint.configs.recommended.rules,
     },
   },
-
   {
     files: ['**/*.{jsx,tsx}'],
     plugins: {
@@ -60,9 +60,7 @@ export default [
       'react-hooks/exhaustive-deps': 'warn',
     },
   },
-
   prettierConfig,
-
   {
     ignores: [
       'node_modules/**',
@@ -83,4 +81,5 @@ export default [
       'dist/**',
     ],
   },
+  ...storybook.configs['flat/recommended'],
 ];
