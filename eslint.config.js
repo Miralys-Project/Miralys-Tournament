@@ -7,10 +7,8 @@ import prettierConfig from 'eslint-config-prettier';
 import globals from 'globals';
 
 export default [
-  // Configuration de base ESLint
   js.configs.recommended,
 
-  // Configuration pour tous les fichiers
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
@@ -22,13 +20,13 @@ export default [
           jsx: true,
         },
       },
-      globals: [
-        globals.browser,
-        globals.node,
-        globals.commonjs,
-        globals.es2021,
-        globals.vitest,
-      ],
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.commonjs,
+        ...globals.es2021,
+        ...globals.vitest,
+      },
     },
     settings: {
       react: {
@@ -37,7 +35,6 @@ export default [
     },
   },
 
-  // Configuration TypeScript
   {
     files: ['**/*.{ts,tsx}'],
     plugins: {
@@ -48,7 +45,6 @@ export default [
     },
   },
 
-  // Configuration React
   {
     files: ['**/*.{jsx,tsx}'],
     plugins: {
@@ -65,10 +61,8 @@ export default [
     },
   },
 
-  // Configuration Prettier (doit être en dernier)
   prettierConfig,
 
-  // Fichiers à ignorer
   {
     ignores: [
       'node_modules/**',
