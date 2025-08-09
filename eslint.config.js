@@ -4,6 +4,7 @@ import tsParser from '@typescript-eslint/parser';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import prettierConfig from 'eslint-config-prettier';
+import globals from 'globals';
 
 export default [
   // Configuration de base ESLint
@@ -21,6 +22,13 @@ export default [
           jsx: true,
         },
       },
+      globals: [
+        globals.browser,
+        globals.node,
+        globals.commonjs,
+        globals.es2021,
+        globals.vitest,
+      ],
     },
     settings: {
       react: {
