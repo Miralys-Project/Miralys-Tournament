@@ -1,7 +1,13 @@
 version: 2
 updates:
-    - directory: /
-      rebase-strategy: auto
-      package-ecosystem: npm
-      schedule:
-          interval: daily
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    rebase-strategy: "auto"
+
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    rebase-strategy: "auto"
