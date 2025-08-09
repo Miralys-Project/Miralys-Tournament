@@ -1,24 +1,23 @@
 module.exports = {
-  languageOptions: {
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-      ecmaVersion: 2021,
-      sourceType: 'module',
-      ecmaFeatures: { jsx: true },
-    },
-  },
-  env: {
-    browser: true,
-    node: true,
-    es2021: true,
-  },
+  // Le nouveau format 'flat config' a un nom de fichier différent (.eslintrc.js)
+  // et utilise une syntaxe différente. Cette version reste dans le format "legacy"
+  // mais avec des plugins à jour.
+  parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier',
+    'plugin:react-hooks/recommended', // Recommandé pour les hooks React
+    'prettier', // Toujours en dernier pour désactiver les règles conflictuelles
   ],
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint'],
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   settings: {
     react: {
       version: 'detect',
@@ -26,6 +25,9 @@ module.exports = {
   },
   rules: {
     'react/react-in-jsx-scope': 'off',
+    'react/jsx-uses-react': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
   ignorePatterns: [
     'node_modules',
@@ -43,5 +45,6 @@ module.exports = {
     'README.md',
     '.husky',
     '.github',
+    'dist',
   ],
 };
