@@ -1,0 +1,18 @@
+javascript-typescript:
+  - '**/*.ts'
+  - '**/*.js'
+
+python:
+  - '**/*.py'
+
+rust:
+  - '**/*.rs'
+
+csharp:
+  - '**/*.cs'
+
+kotlin:
+  - '**/*.kts'
+
+documentation:
+  - '**/*.md'

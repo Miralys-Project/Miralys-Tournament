@@ -1,0 +1,13 @@
+*.js    eol=lf
+*.js.map    eol=lf
+*.ts    eol=lf
+*.json  eol=lf
+*.yaml  eol=lf
+*.md    eol=lf
+*.cs    eol=lf
+*.py    eol=lf
+*.kt    eol=lf
+*.rs    eol=lf
+*.yml   eol=lf
+*.xml   eol=lf
+*.sh    eol=lf
