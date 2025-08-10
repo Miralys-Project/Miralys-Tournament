@@ -24,8 +24,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "vitest run --passWithNoTests",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006 --config-dir ./.storybook",
+    "build-storybook": "storybook build --config-dir ./.storybook"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "4.1.0",
