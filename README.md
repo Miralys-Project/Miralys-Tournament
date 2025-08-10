@@ -39,7 +39,7 @@ Built with modern web and desktop technologies, it supports creating tournaments
 - Player and team management with verification system  
 - Integration with gaming platforms and social media  
 - Dynamic match generation and ranking system  
-- Cross-platform: Web, Desktop (Electron alternative), Mobile (Tauri recommended)  
+- Cross-platform: Web, Desktop (Tauri), Mobile (Expo)  
 - Open Source & Community-driven  
 
 ---
@@ -47,11 +47,13 @@ Built with modern web and desktop technologies, it supports creating tournaments
 ## 🛠️ Technologies Used
 
 - **[React](https://reactjs.org/)** (frontend UI)  
+- **[SCSS/SASS](https://sass-lang.com)** (CSS extension language)
 - **[Vite](https://vitejs.dev/)** (build tool)  
-- **[TypeScript](https://www.typescriptlang.org/)** (typed JavaScript)  
+- **[TypeScript](https://www.typescriptlang.org/)** (JavaScript super-set)  
 - **[Express](https://expressjs.com/)** (backend API)  
 - **[Discord.js](https://discord.js.org/)** (Discord bot integration)  
-- **[Tauri](https://tauri.app/)** (desktop & mobile native app framework)  
+- **[Tauri](https://tauri.app/)** (desktop native app framework)  
+- **[Expo](https://expo.dev)** (mobile native app framework) 
 - **[pnpm](https://pnpm.io/)** (package manager)  
 
 ---
@@ -60,7 +62,7 @@ Built with modern web and desktop technologies, it supports creating tournaments
 
 ### Prerequisites
 
-- Node.js >= 18.x  
+- Node.js >= 22.18.0  
 - Rust and Cargo (for Tauri) — install from [rustup.rs](https://rustup.rs)  
 - pnpm package manager (recommended)  
 
@@ -114,7 +116,7 @@ Join our Discord to discuss, ask questions, and contribute:
 
 Made with ❤️ by the Miralys Project Team
 
-<div style="text-align: center;">
+<div align="center">
 
 
   <a href="https://www.miralys.xyz" target="_blank" rel="noopener noreferrer">
