@@ -25,5 +25,8 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "vite": "^7.1.1"
   }
 }
