@@ -55,7 +55,8 @@ Built with modern web and desktop technologies, it supports creating tournaments
 - **[Tauri](https://tauri.app/)** (desktop native app framework)  
 - **[Expo](https://expo.dev)** (mobile native app framework) 
 - **[pnpm](https://pnpm.io/)** (package manager)  
-
+- **[Prisma](https://www.prisma.io)** (Database client)
+- **[PostGreSQL](https://www.postgresql.org)** (Database server)
 ---
 
 ## ⚙️ Getting Started
