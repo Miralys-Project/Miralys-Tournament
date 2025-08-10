@@ -37,6 +37,7 @@ export default defineConfig({
         'dist/**',
         'build/**',
         'target/**',
+        'packages/ui/**',
       ],
     },
     alias: {
