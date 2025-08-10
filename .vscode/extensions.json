@@ -10,6 +10,7 @@
     "ecmel.vscode-html-css",
     "dsznajder.es7-react-js-snippets",
     "stylelint.vscode-stylelint",
-    "unifiedjs.vscode-mdx"
+    "unifiedjs.vscode-mdx",
+    "Prisma.prisma"
   ]
 }

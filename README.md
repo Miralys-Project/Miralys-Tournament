@@ -72,6 +72,9 @@ Built with modern web and desktop technologies, it supports creating tournaments
 git clone https://github.com/Miralys-Project/Miralys-Tournament.git
 cd Miralys-Tournament
 pnpm install
+cd apps/server
+# Set up a ".env" file. SEE .env.example
+pnpm run prisma:init
 ````
 
 ### Running in Development
@@ -86,6 +89,11 @@ pnpm --filter web dev
 
 ```bash
 pnpm --filter desktop tauri dev
+```
+
+* **Mobile app (Expo):**
+```bash
+# See package.json in apps/mobile
 ```
 
 ---
@@ -117,8 +125,6 @@ Join our Discord to discuss, ask questions, and contribute:
 Made with ❤️ by the Miralys Project Team
 
 <div align="center">
-
-
   <a href="https://www.miralys.xyz" target="_blank" rel="noopener noreferrer">
     <img src=".github/powered-by-miralys.png" alt="License" style="height:100px" />
   </a>
