@@ -1,5 +1,3 @@
-Got it! Here’s a clear and professional `SECURITY.md` file in English, tailored for your open source project with NodeJS/TS and Rust components:
-
 ```markdown
 # Security Policy
 
@@ -49,5 +47,3 @@ Please refer to the [documentation](../README.md) for information about supporte
 
 Thank you for helping us keep this project secure!
 ```
-
-If you want, I can help customize the email/contact or add a CVE policy too!
