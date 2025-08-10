@@ -23,7 +23,6 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "test": "vitest run --passWithNoTests",
     "storybook": "storybook dev -p 6006 --config-dir ./.storybook",
     "build-storybook": "storybook build --config-dir ./.storybook"
   },
