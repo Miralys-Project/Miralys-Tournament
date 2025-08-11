@@ -1,0 +1,36 @@
+{
+  "name": "prisma-client",
+  "version": "0.0.0",
+  "description": "Prisma-Client for Miralys Tournament Manager",
+  "keywords": [
+    "prisma",
+    "prisma-client",
+    "postgresql",
+    "database",
+    "db",
+    "sql"
+  ],
+  "homepage": "https://github.com/Miralys-Project/Miralys-Tournament#readme",
+  "bugs": {
+    "url": "https://github.com/Miralys-Project/Miralys-Tournament/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miralys-Project/Miralys-Tournament.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Miralys-Project",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "vitest run --passWithNoTests",
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "prisma": "^6.13.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.13.0"
+  }
+}

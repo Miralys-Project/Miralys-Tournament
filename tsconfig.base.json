@@ -15,7 +15,8 @@
     "baseUrl": ".",
     "paths": {
       "@shared/*": ["packages/shared/src/*"],
-      "@ui/*": ["packages/ui/src/*"]
+      "@ui/*": ["packages/ui/src/*"],
+      "@prisma/*": ["packages/prisma-client/src/*"]
     }
   },
   "include": ["apps/**/*", "packages/**/*"]
