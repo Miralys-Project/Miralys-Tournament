@@ -24,7 +24,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "vitest run --passWithNoTests",
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "prisma:init": "prisma migrate deploy && prisma generate"
   },
   "devDependencies": {
     "prisma": "^6.13.0",
