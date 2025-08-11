@@ -16,3 +16,27 @@ kotlin:
 
 documentation:
   - '**/*.md'
+dependencies:
+    - '**/package.json'
+    - '**/Cargo.toml'
+    - '/pnpm-lock.yaml'
+    - '/pnpm-workspace.yaml'
+config:
+    - '**/tsconfig.json'
+    - '**/jsconfig.json'
+    - '**/eslint.config.js'
+    - '**/.prettierrc'
+    - '**/.stylelintrc'
+    - '**/.prettierignore'
+    - '**/.gitignore'
+    - '**/.npmrc'
+    - '**/.commitlintrc.json'
+    - '**/.husky/**'
+    - '**/.github/**'
+    - '**/turbo.json'
+    - '**/vite.config.ts'
+    - '**/vitest.config.ts'
+    - '**/tsconfig.base.json'
+    - '**/LICENSE'
+    - '**/.gitattributes'
+    - '**/.editorconfig'
