@@ -73,7 +73,7 @@ Built with modern web and desktop technologies, it supports creating tournaments
 git clone https://github.com/Miralys-Project/Miralys-Tournament.git
 cd Miralys-Tournament
 pnpm install
-cd apps/server
+cd packages/prisma-client
 # Set up a ".env" file. SEE .env.example
 pnpm run prisma:init
 ````
