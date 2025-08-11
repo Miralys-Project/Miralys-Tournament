@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   AutocompleteInteraction,
   CommandInteraction,
@@ -7,7 +8,6 @@ import {
 import { Instance } from './Instance.js';
 import { Connection } from 'mysql2';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function run(
   _client: Instance,
   _interaction: CommandInteraction,
@@ -15,7 +15,6 @@ function run(
   _db: Connection,
 ) {}
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function runautocomplete(
   _client: Instance,
   _interaction: AutocompleteInteraction,
