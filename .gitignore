@@ -120,3 +120,5 @@ temp/
 storybook-static
 
 .turbo
+
+apps/discord/dist

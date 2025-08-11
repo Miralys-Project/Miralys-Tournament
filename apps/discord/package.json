@@ -1,0 +1,51 @@
+{
+  "name": "miralys-tournament-bot",
+  "version": "0.0.0",
+  "description": "The Discord bot for Miralys Tournament",
+  "keywords": [
+    "discord-bot",
+    "bot",
+    "bot-discord",
+    "discord",
+    "discord-app",
+    "discord-api",
+    "app",
+    "api"
+  ],
+  "homepage": "https://github.com/Miralys-Project/Miralys-Tournament#readme",
+  "bugs": {
+    "url": "https://github.com/Miralys-Project/Miralys-Tournament/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miralys-Project/Miralys-Tournament.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Miralys-Project",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "vitest run --passWithNoTests",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "dotenv": "^17.2.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^1.11.3",
+    "@discordjs/collection": "^2.1.1",
+    "@discordjs/rest": "^2.5.1",
+    "axios": "^1.11.0",
+    "colors": "^1.4.0",
+    "discord-api-types": "^0.38.18",
+    "discord.js": "^14.21.0",
+    "i18next": "^25.3.4",
+    "i18next-fs-backend": "^2.6.0",
+    "ms": "^2.1.3",
+    "mysql2": "^3.14.3",
+    "path": "^0.12.7"
+  }
+}

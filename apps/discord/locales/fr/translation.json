@@ -1,0 +1,7 @@
+{
+  "ping": "Bot: {{pingbot}}ms;API de Discord: {{pingws}}ms;Base de données: {{pingdb}}ms",
+  "ping-title": "Latences du bot",
+
+  "lang-title": "Langue",
+  "lang-desc": "La langue a été configuré sur {{lang}}"
+}

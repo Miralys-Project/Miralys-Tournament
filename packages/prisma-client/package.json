@@ -1,5 +1,5 @@
 {
-  "name": "prisma-client",
+  "name": "@miralys-tournament/prisma-client",
   "version": "0.0.0",
   "description": "Prisma-Client for Miralys Tournament Manager",
   "keywords": [
