@@ -27,4 +27,4 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Run build
-        run: pnpm build
+        run: pnpm -r --filter '!prisma-client' run build
