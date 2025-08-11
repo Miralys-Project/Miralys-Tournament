@@ -23,7 +23,7 @@ const __dirname = path.dirname(__filename);
 export class Instance extends Client {
   public rest: REST;
   public commands: Collection<string, Command>;
-  public static readonly version = '1.0.0';
+  public version = '1.0.0';
   public db: Connection;
   public slashcommands: Array<SlashCommandBuilder>;
   public personalemojis: typeof emojis;

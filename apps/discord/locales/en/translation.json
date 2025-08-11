@@ -3,5 +3,16 @@
   "ping-title": "Bot latencies",
 
   "lang-title": "Lang",
-  "lang-desc": "The language has been set to {{lang}}"
+  "lang-desc": "The language has been set to {{lang}}",
+
+  "botinfo-title": "Bot Informations",
+  "botinfo-name": "Name",
+  "botinfo-id": "ID",
+  "botinfo-users": "Users",
+  "botinfo-servers": "Servers",
+  "botinfo-version": "Version",
+  "botinfo-language": "Language",
+  "botinfo-creator": "Creator",
+
+  "website": "Website"
 }
