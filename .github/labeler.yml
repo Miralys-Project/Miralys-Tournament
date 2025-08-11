@@ -1,42 +1,52 @@
 javascript-typescript:
-  - '**/*.ts'
-  - '**/*.js'
+  - any:
+      - '**/*.ts'
+      - '**/*.js'
 
 python:
-  - '**/*.py'
+  - any:
+      - '**/*.py'
 
 rust:
-  - '**/*.rs'
+  - any:
+      - '**/*.rs'
 
 csharp:
-  - '**/*.cs'
+  - any:
+      - '**/*.cs'
 
 kotlin:
-  - '**/*.kts'
+  - any:
+      - '**/*.kts'
 
 documentation:
-  - '**/*.md'
+  - any:
+      - '**/*.md'
+
 dependencies:
-    - '**/package.json'
-    - '**/Cargo.toml'
-    - '/pnpm-lock.yaml'
-    - '/pnpm-workspace.yaml'
+  - any:
+      - '**/package.json'
+      - '**/Cargo.toml'
+      - '/pnpm-lock.yaml'
+      - '/pnpm-workspace.yaml'
+
 config:
-    - '**/tsconfig.json'
-    - '**/jsconfig.json'
-    - '**/eslint.config.js'
-    - '**/.prettierrc'
-    - '**/.stylelintrc'
-    - '**/.prettierignore'
-    - '**/.gitignore'
-    - '**/.npmrc'
-    - '**/.commitlintrc.json'
-    - '**/.husky/**'
-    - '**/.github/**'
-    - '**/turbo.json'
-    - '**/vite.config.ts'
-    - '**/vitest.config.ts'
-    - '**/tsconfig.base.json'
-    - '**/LICENSE'
-    - '**/.gitattributes'
-    - '**/.editorconfig'
+  - any:
+      - '**/tsconfig.json'
+      - '**/jsconfig.json'
+      - '**/eslint.config.js'
+      - '**/.prettierrc'
+      - '**/.stylelintrc'
+      - '**/.prettierignore'
+      - '**/.gitignore'
+      - '**/.npmrc'
+      - '**/.commitlintrc.json'
+      - '**/.husky/**'
+      - '**/.github/**'
+      - '**/turbo.json'
+      - '**/vite.config.ts'
+      - '**/vitest.config.ts'
+      - '**/tsconfig.base.json'
+      - '**/LICENSE'
+      - '**/.gitattributes'
+      - '**/.editorconfig'
