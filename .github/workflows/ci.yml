@@ -26,10 +26,5 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-
-      - name: Initialize Prisma (prisma:init)
-        working-directory: packages/prisma-client
-        run: pnpm run prisma:init
-
       - name: Run build
         run: pnpm build

@@ -14,7 +14,8 @@
     "build": {
       "dependsOn": ["lint", "test"],
       "outputs": ["dist/**", "build/**"],
-      "cache": true
+      "cache": true,
+      "inputs": ["!packages/prisma-client/**"]
     },
     "dev": {
       "cache": false,
