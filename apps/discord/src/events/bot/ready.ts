@@ -6,7 +6,7 @@ export default new Event('ready', async client => {
   client.user?.setStatus('online');
   client.user?.setActivity(`Miralys Tournament soon...`, {
     type: ActivityType.Streaming,
-    url: 'https://www.twitch.tv/miralys',
+    url: 'https://www.twitch.tv/miralysproject',
   });
 
   Logger.info(
