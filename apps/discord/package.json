@@ -38,7 +38,7 @@
     "@discordjs/builders": "^1.11.3",
     "@discordjs/collection": "^2.1.1",
     "@discordjs/rest": "^2.5.1",
-    "axios": "^1.11.0",
+    "axios": "^1.12.0",
     "colors": "^1.4.0",
     "discord-api-types": "^0.38.18",
     "discord.js": "^14.21.0",
